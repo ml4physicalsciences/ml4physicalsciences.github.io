@@ -2842,7 +2842,15 @@
 	}
 
 		.features li {
-			width: calc(25% - 2em);
+			width: calc(20% - 2em);
+			margin-left: 2em;
+			margin-top: 0.5em;
+			padding: 0;
+		}
+
+		.wide li {
+			text-align: center;
+			width: calc(50% - 2em);
 			margin-left: 2em;
 			margin-top: 0.5em;
 			padding: 0;
