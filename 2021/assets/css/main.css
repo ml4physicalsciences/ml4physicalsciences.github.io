@@ -2856,7 +2856,7 @@
 			padding: 0;
 		}
 
-			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3), .features li:nth-child(4)  {
+			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3), .features li:nth-child(4), .features li:nth-child(5)  {
 				margin-top: 0;
 			}
 
@@ -3265,7 +3265,7 @@
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
-		width: 64em;
+		width: 58em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
 		background-color: #f7f7f7;
@@ -3805,7 +3805,7 @@
 /* Wrapper */
 
 	#wrapper {
-		width: 64em;
+		width: 58em;
 		max-width: calc(100% - 4em);
 		margin: 0 auto;
 	}
