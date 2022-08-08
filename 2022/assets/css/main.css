@@ -1739,10 +1739,12 @@
 
 	h3 {
 		font-size: 1.25em;
+		font-weight: 400;
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.0em;
+		font-weight: 400;
 	}
 
 	h5 {
@@ -1751,6 +1753,10 @@
 
 	h6 {
 		font-size: 0.7em;
+	}
+
+	.features h3, .features h4 {
+		font-weight: 300;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3057,8 +3063,12 @@
 				text-align: center;
 			}
 
-			.spotlight p, .spotlight ul li {
+			.spotlight p, .spotlight li {
 				text-align: left;
+			}
+
+			.spotlight ul.features li {
+				text-align: center;
 			}
 
 				.spotlight .content {
