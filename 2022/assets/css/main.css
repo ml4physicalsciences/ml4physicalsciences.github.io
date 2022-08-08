@@ -3057,6 +3057,10 @@
 				text-align: center;
 			}
 
+			.spotlight p, .spotlight ul li {
+				text-align: left;
+			}
+
 				.spotlight .content {
 					-moz-flex: 0 1 auto;
 					-webkit-flex: 0 1 auto;
