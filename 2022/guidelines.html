@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48900508-9"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-48900508-9');
+		</script>
+
+		<title>Machine Learning and the Physical Sciences, NeurIPS 2022</title>
+		<meta name="description" content="Website for the Machine Learning and the Physical Sciences (MLPS) workshop at the 35th Conference on Neural Information Processing Systems (NeurIPS)">
+		<meta name="author" content="Atilim Gunes Baydin">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/lightbox.css" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+						<img style="width:5em;"src="images/NeurIPS-logo-white.svg" alt="" />
+						<h1>Machine Learning and the Physical Sciences</h1>
+						<p>Workshop at the 36th conference on Neural Information Processing Systems (NeurIPS)<br>
+						December 3, 2022</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="./index.html#about" class="active">About</a></li>
+					    	<!-- <li><a href="#schedule">Schedule</a></li>  -->
+							<!-- <li><a href="#papers">Papers</a></li> -->
+							<li><a href="./index.html#speakers">Speakers</a></li>
+							<li><a href="./index.html#cfp">Call for papers</a></li>
+							<li><a href="./index.html#organizers">Organizers</a></li>
+							<li><a href="./index.html#sponsors">Sponsors</a></li>
+							<li>
+								<div class="dropdown">
+								  <a>All Years</a>
+								  <div class="dropdown-content">
+										<a href="https://ml4physicalsciences.github.io/2022">2022</a>
+										<a href="https://ml4physicalsciences.github.io/2021">2021</a>
+										<a href="https://ml4physicalsciences.github.io/2020">2020</a>
+										<a href="https://ml4physicalsciences.github.io/2019">2019</a>
+								    	<a href="https://ml4physicalsciences.github.io/2017">2017</a>
+								  </div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<section id="cfp" class="main">
+							<div class="spotlight">
+								<div class="content">
+									<header class="major">
+										<h2>Guidelines and best practices</h2>
+									</header>
+
+									<p>These guidelines and best practices were derived in part from the NeurIPS Conference checklist. We consider these to be more of a guide than a checklist. We also wish to remind authors and reviewers that a) we welcome papers on works in progress and b) that reviewers may use this as a guideline in reviewing submissions.</p>
+
+									<p>Our guidelines here supersede the NeurIPS conference checklist.</p>
+
+									<ol>
+										<li><span style="text-decoration: underline;">Claims</span></li>
+										<ol>
+										<li>Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?</li>
+										<ol>
+										<li>Claims in the paper should match theoretical and experimental results in terms of how much the results can be expected to generalize.</li>
+										<li>The paper's contributions should be clearly stated in the abstract and introduction, along with any important assumptions and limitations. It is fine to include aspirational goals as motivation as long as it is clear that these goals are not attained by the paper.</li>
+										</ol>
+										</ol>
+										<li><span style="text-decoration: underline;">Limitations of the work</span></li>
+										<ol>
+										<li>Did you describe the limitations of your work?</li>
+										<li>Point out any strong assumptions and how robust your results are to violations of these assumptions (e.g., independence assumptions, noiseless settings, model well-specification, asymptotic approximations only holding locally). Reflect on how these assumptions might be violated in practice and what the implications would be.</li>
+										<li>Reflect on the scope of your claims, e.g., if you only tested your approach on a few datasets or did a few runs. In general, empirical results often depend on implicit assumptions, which should be articulated.</li>
+										<li>Reflect on the factors that influence the performance of your approach. For example, a facial recognition algorithm may perform poorly when image resolution is low or images are taken in low lighting. Or a speech-to-text system might not be able to be reliably used to provide closed captions for online lectures because it fails to handle technical jargon.</li>
+										<li>We understand that authors might fear that complete honesty about limitations might be used by reviewers as grounds for rejection. It is worth keeping in mind that a worse outcome might be if reviewers discover limitations that aren't acknowledged in the paper. In general, we advise authors to use their best judgment and recognize that individual actions in favor of transparency play an important role in developing norms that preserve the integrity of the community. Reviewers will be specifically instructed to not penalize honesty concerning limitations.</li>
+										<li>We again remind authors and reviewers that we welcome papers on works in progress in advanced stages of completion.</li>
+										</ol>
+										<li><span style="text-decoration: underline;">Theoretical Results</span></li>
+										<ol>
+										<li>Did you state the full set of assumptions of all theoretical results?</li>
+										<ol>
+										<li>All assumptions should be clearly stated or referenced in the statement of any theorems.</li>
+										</ol>
+										<li>Did you include&nbsp; mathematical proofs of theoretical results?</li>
+										<ol>
+										<li>The proofs can either appear in the main paper or in the appendix, but if they appear in the supplemental material, authors are encouraged to provide a short proof sketch to provide intuition. Proofs that are essential to justify the claims in the submission should appear in the main body of the submission.</li>
+										</ol>
+										</ol>
+										<li><span style="text-decoration: underline;">Existing Literature</span></li>
+										<ol>
+										<li>You are encouraged to discuss the relationship between your results and related results in the literature.</li>
+										</ol>
+										<li><span style="text-decoration: underline;">Experimental Results</span></li>
+										<ol>
+										<li>Did you include the code, data, and instructions needed to reproduce the main experimental results (either in the appendix or as a URL)?</li>
+										<li>Main experimental results include your new method and baselines. You should try to capture as many of the minor experiments in the paper as possible. If a subset of experiments are reproducible, you should state which ones are.</li>
+										<li>While we encourage release of code and data, we understand that this might not be possible, so "no because the code is proprietary" is an acceptable answer.</li>
+										<li>At submission time, to preserve anonymity, remember to release/link to anonymized versions of code packages/repositories.</li>
+										</ol>
+										<li><span style="text-decoration: underline;">Training and computing details</span></li>
+										<ol>
+										<li>Did you specify all the training details (e.g., data splits, hyperparameters, how they were chosen)?</li>
+										<li>The full details can be provided with the code, but the important details should be in the main paper.</li>
+										<li>Did you report error bars (e.g., with respect to the random seed after running experiments multiple times)?</li>
+										<ol>
+										<li>Answer "yes" if you report error bars, confidence intervals, or statistical significance tests for your main experiments.</li>
+										<li>Did you include the amount of compute and the type of resources used (e.g., type of GPUs, internal cluster, or cloud provider)?</li>
+										<li>Ideally, you would provide the compute required for each of the individual experimental runs as well as the total compute.</li>
+										</ol>
+										<li>Note that your full research project might have required more compute than the experiments reported in the paper (e.g., preliminary or failed experiments that didn't make it into the paper). The total compute used may be harder to characterize, but if you can do that, that would be even better.</li>
+										</ol>
+										<li><span style="text-decoration: underline;">Existing Assets</span></li>
+										<ol>
+										<li>If you are using existing assets (e.g., code, data, models) or curating/releasing new assets&hellip;</li>
+										<ol>
+										<li>If your work uses existing assets, did you cite the creators?</li>
+										<ol>
+										<li>Cite the original paper that produced the code package or dataset.</li>
+										<li>Remember to state which version of the asset you're using.</li>
+										<li>If possible, include a URL.</li>
+										</ol>
+										<li>Did you mention the license of the assets?</li>
+										<ol>
+										<li>State the name of the license (e.g., CC-BY 4.0) for each asset.</li>
+										</ol>
+										<li>If you scraped data from a particular source (e.g., website), you should state the copyright and terms of service of that source.</li>
+										</ol>
+										</ol>
+										<li><span style="text-decoration: underline;">Releasing Assets</span></li>
+										<ol>
+										<li>If you are releasing assets, you should include a license, copyright information, and terms of use in the package. If you are repackaging an existing dataset, you should state the original license, as well as the one for the derived asset (if it has changed).</li>
+										<li>If you cannot find this information online, you are encouraged to reach out to the asset's creators.</li>
+										</ol>
+										<li><span style="text-decoration: underline;">New Assets</span></li>
+										<ol>
+										<li>Did you include any new assets either in the appendix or as a URL?</li>
+										<ol>
+										<li>During submission time, remember to anonymize your assets, e.g. by creating an anonymized URL.</li>
+										<li>If you cannot release (e.g., the asset contains proprietary information), state the reason.</li>
+										<li>Did you discuss whether and how consent was obtained from people whose data you're using/curating?</li>
+										<ol>
+										<li>For example, if you collected data from/via crowdsourcing, did your instructions to crowdworkers explain how the data would be used?</li>
+										<li>Even if you used an existing dataset, you should check how data was collected and whether consent was obtained. We acknowledge this might be difficult, so please try your best; the goal is to raise awareness of possible issues that might be ingrained in our community.</li>
+										</ol>
+										<li>Did you discuss whether the data you are using/curating contains personally identifiable information or offensive content?</li>
+										<ol>
+										<li>There are some settings where the existence of this information is not necessarily bad (e.g., swear words occur naturally in text). This question is just to encourage discussion of potentially undesirable properties.</li>
+										<li>Explain how you checked this (e.g., with a script, manually on a sample, etc.).</li>
+										</ol>
+										</ol>
+										</ol>
+										<li><span style="text-decoration: underline;">Ethics and Broader Impacts Statement</span></li>
+										<ol>
+										<li>Have you read the ethics review guidelines and ensured that your paper conforms to them?</li>
+										<ol>
+										<li>Please read the ethics review guidelines.</li>
+										</ol>
+										<li>You are encouraged to use a CO2 emissions tracker and consider the environmental impact of your model/calculations. See, for example, the experiment impact tracker (Henderson et al.), the ML CO2 impact calculator (Lacoste et al.), and CodeCarbon.</li>
+										<li>Did you discuss any potential positive or negative societal impacts of your work?</li>
+										<ol>
+										<li>Examples of negative societal impacts include potential malicious or unintended uses (e.g., disinformation, generating fake profiles, surveillance), environmental impact (e.g., training huge models), fairness considerations (e.g., deployment of technologies that could further disadvantage historically disadvantaged groups), privacy considerations (e.g., a paper on model/data stealing), and security considerations (e.g., adversarial attacks).</li>
+										<li>We expect many papers to be foundational research and not tied to particular applications, let alone deployments, but being foundational does not imply that research has no societal impacts. If you see a direct path to any negative applications, you should point it out, even if it's not specific to your work. In a theoretical paper on algorithmic fairness, you might caution against overreliance on mathematical metrics for quantifying fairness and examples of ways this can go wrong. If you improve the quality of generative models, you might point out that your approach can be used to generate Deepfakes for disinformation. On the other hand, if you develop a generic algorithm for optimizing neural networks, you do not need to mention that this could enable people to train models that generate Deepfakes faster.</li>
+										<li>Consider different stakeholders that could be impacted by your work. It is possible that research benefits some stakeholders while harming others. Pay special attention to vulnerable or marginalized communities.</li>
+										<li>Consider possible harms that could arise when the technology is being used as intended and functioning correctly, harms that could arise when the technology is being used as intended but gives incorrect results, and harms following from (intentional or unintentional) misuse of the technology.</li>
+										<li>If there are negative societal impacts, you should also discuss any mitigation strategies (e.g., gated release of models, providing defenses in addition to attacks, mechanisms for monitoring misuse, mechanisms to monitor how a system learns from feedback over time, improving the efficiency and accessibility of ML).</li>
+										<li>For more information, see this unofficial guidance from last year and other resources at the broader impacts workshop at NeurIPS 2020.</li>
+										</ol>
+										</ol>
+										<li><span style="text-decoration: underline;">Anonymization</span></li>
+										<ol>
+										<li>At submission time, to preserve anonymity, remember to release anonymized versions.</li>
+										</ol>
+										</ol>
+
+
+								</div>
+							</div>
+						</section>
+
+						
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact</h2>
+							<p>For questions and comments, please contact: <a href="mailto:ml4ps2022@googlegroups.com">ml4ps2022@googlegroups.com</a></p>
+						</section>
+						<!-- <p class="copyright">Background image: <a href="https://www.spacetelescope.org/images/potw1712a/">NGC 3447 from Hubble WFC3</a></p> -->
+						<p class="copyright">Copyright &copy; Atılım Güneş Baydin. Design: <a href="https://html5up.net">HTML5 UP</a>.</br>Design inspired by <a href="http://bayesiandeeplearning.org/">http://bayesiandeeplearning.org/</a> by Yarin Gal.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts  -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<!-- Default Statcounter code for
+			ml4physicalsciences.github.io
+			https://ml4physicalsciences.github.io/ -->
+			<script type="text/javascript">
+			var sc_project=12052169;
+			var sc_invisible=1;
+			var sc_security="0155c36a";
+			var sc_https=1;
+			</script>
+			<script type="text/javascript"
+			src="https://www.statcounter.com/counter/counter.js"
+			async></script>
+			<noscript><div class="statcounter"><a title="free hit
+			counter" href="https://statcounter.com/"
+			target="_blank"><img class="statcounter"
+			src="https://c.statcounter.com/12052169/0/0155c36a/1/"
+			alt="free hit counter"></a></div></noscript>
+			<!-- End of Statcounter Code -->
+			<script src="assets/js/lightbox.js"></script>
+	</body>
+</html>

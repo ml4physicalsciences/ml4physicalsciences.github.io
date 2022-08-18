@@ -1685,12 +1685,18 @@
 		transition: color 0.2s ease, border-bottom 0.2s ease; */
 		text-decoration: none;
 		border-bottom: dotted 1px;
-		color: inherit;
+		color: #2d7cca;
+		font-weight: 500;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-		}
+	a:hover {
+		border-bottom-color: transparent;
+	}
+
+	footer a {
+		color: rgb(224, 224, 224);
+		font-weight: 500;
+	}
 
 	strong, b {
 		font-weight: 400;
@@ -1724,7 +1730,8 @@
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			/* color: inherit; */
+			color: #2d7cca;
 			text-decoration: none;
 		}
 
@@ -3287,6 +3294,7 @@
 		/*border-top-right-radius: 0.25em;*/
 		cursor: default;
 		text-align: center;
+		font-weight: 500;
 	}
 
 		#nav input, #nav select, #nav textarea {
