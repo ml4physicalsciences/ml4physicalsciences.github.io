@@ -1764,6 +1764,7 @@
 
 	.features h3, .features h4 {
 		font-weight: 300;
+		text-align: center;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -2855,10 +2856,11 @@
 	}
 
 		.features li {
-			width: calc(20% - 2em);
-			margin-left: 2em;
+			width: calc(33% - 2em);
+			margin-left: 0em;
 			margin-top: 0.5em;
 			padding: 0;
+			text-align: center;
 		}
 
 		.wide li {
