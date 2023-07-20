@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48900508-9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-48900508-9');
+	</script>
+
+	<title>Machine Learning and the Physical Sciences, NeurIPS 2023</title>
+	<meta name="description"
+		content="Website for the Machine Learning and the Physical Sciences (MLPS) workshop at the 37th Conference on Neural Information Processing Systems (NeurIPS)">
+	<meta name="author" content="Atilim Gunes Baydin">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<link rel="stylesheet" href="assets/css/lightbox.css" />
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/cmu-sans-serif" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+	<script src="assets/js/sketch.js"></script>
+</head>
+<style>
+	body {
+		/* font-family: 'Concourse T3', sans-serif; */
+		font-family: 'CMU Sans Serif', sans-serif;
+		/* font-family: 'Lato', sans-serif; */
+		font-size: 1.15em;
+	}
+</style>
+
+<body>
+
+	<div id="sketch-holder"></div>
+	<script src="sketch.js"></script>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+			<img style="width:5em;" src="images/NeurIPS-logo-white.svg" alt="" />
+			<h1>Machine Learning and the Physical Sciences</h1>
+			<p>Workshop at the 37th conference on Neural Information Processing Systems (NeurIPS)<br>
+				December 15 or 16, 2023</p>
+		</header>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<!-- <li><a href="#schedule">Schedule</a></li> -->
+				<li><a href="#speakers">Speakers</a></li>
+				<!-- <li><a href="#papers">Papers</a></li> -->
+				<li><a href="#cfp">Call for papers</a></li>
+				<li><a href="#organizers">Organizers</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+				<li>
+					<div class="dropdown">
+						<a>All Years</a>
+						<div class="dropdown-content">
+							<a href="https://ml4physicalsciences.github.io/2023">2023</a>
+							<a href="https://ml4physicalsciences.github.io/2022">2022</a>
+							<a href="https://ml4physicalsciences.github.io/2021">2021</a>
+							<a href="https://ml4physicalsciences.github.io/2020">2020</a>
+							<a href="https://ml4physicalsciences.github.io/2019">2019</a>
+							<a href="https://ml4physicalsciences.github.io/2017">2017</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<section id="about" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>About</h2>
+						</header>
+
+						<p>
+							The <strong>Machine Learning and the Physical Sciences</strong> workshop aims to provide an
+							informal, inclusive and leading-edge venue for research and discussions at the interface of
+							machine learning (ML) and the physical sciences. This interface spans (1) applications of ML
+							in physical sciences (<emph>ML for physics</emph>), (2) developments in ML motivated by
+							physical insights (<emph>physics for ML</emph>), and most recently (3) convergence of ML and
+							physical sciences (<emph>physics with ML</emph>) which inspires questioning what scientific
+							understanding means in the age of complex-AI powered science, and what roles machine and
+							human scientists will play in developing scientific understanding in the future.
+						</p>
+
+						<p>Recent years have seen a tremendous increase in cases where ML models are used for scientific
+							processing and discovery, and similarly, instances where tools and insights from the
+							physical sciences are brought to the study of ML models. The harmonious co-development of
+							the two fields is not a surprise: ML methods have had great success in learning complex
+							representations of data that enable novel modeling and data processing approaches in many
+							scientific disciplines. Indeed, in some sense, ML and physics are concerned with a shared
+							goal of characterizing the true probability distributions of nature. As ML and physical
+							science research becomes more intertwined, questions naturally arise around what scientific
+							understanding is when science is performed with the assistance of complex and highly
+							parameterized models. Taken to the extreme, if an ML model is developed for a scientific
+							task and demonstrates robustness and generalizability but lacks interpretability in terms of
+							an existing scientific knowledge basis, is this still a useful scientific result?</p>
+
+						<p>The breadth of work at the intersection of ML and physical sciences is answering many
+							important questions for both fields while opening up new ones that can only be addressed by
+							a joint effort of both communities. By bringing together ML researchers and physical
+							scientists who apply and study ML, we expect to strengthen the much needed interdisciplinary
+							dialogue, introduce exciting new open problems to the broader community, and stimulate the
+							production of new approaches to solving challenging open problems in the sciences. Invited
+							talks from leading individuals in both communities will cover the state-of-the-art
+							techniques and set the stage for this workshop, which will also include contributed talks
+							selected from submissions. The workshop will also feature an expert panel discussion on
+							"Philosophy of Science in the AI Era" --- focusing on topics such as scientific
+							understanding in the age of extremely complex ML models, automating science via machines,
+							and ML models as source of inspiration for scientific discoveries. Finally, there will be
+							multiple community building activities such as a voluntary mentorship opportunity and round
+							table discussions on curated topics to foster connection building and facilitate knowledge
+							sharing across disciplines, backgrounds, and career stages.</p>
+
+						<h2>NeurIPS 2023</h2>
+						<p><span class="image left"><img style="width:6em;padding-left:0.5em;padding-top:.7em;"
+									src="images/NeurIPS-logo.svg" alt="" /></span>The Machine Learning and the Physical
+							Sciences 2023 workshop will be held on December 15 or 16, 2023 at the New Orleans Convention
+							Center
+							in New Orleans, USA as a part of the <a href="https://neurips.cc/">37th annual conference on
+								Neural Information Processing Systems</a> (NeurIPS). The workshop is planned to take
+							place in a hybrid format inclusive of virtual participation.
+					</div>
+				</div>
+			</section>
+
+			<!-- <section id="schedule" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Schedule</h2>
+						</header>
+
+						<p>See also the official NeurIPS workshop <a
+								href="https://neurips.cc/virtual/2023/workshop/49979">schedule</a>.</a></p>
+
+
+					</div>
+				</div>
+			</section> -->
+
+			<section id="speakers" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Speakers and Panelists</h2>
+						</header>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_peiris.jpg" alt="" />
+								<h3><a href="https://www.ucl.ac.uk/cosmoparticle/hiranya-peiris">Hiranya
+										Peiris</a></br>UCL / Stockholm University</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_pfau.jpg" alt="" />
+								<h3><a href="http://davidpfau.com/">David Pfau</a></br>DeepMind</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_parisi.jpg" alt="" />
+								<h3><a href="https://chimera.roma1.infn.it/GIORGIO/index.html">Giorgio
+										Parisi</a></br>Sapienza University of Rome</h3>
+							</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_mikuni.jpg" alt="" />
+								<h3><a href="https://www.nersc.gov/about/nersc-staff/nesap-postdocs/vinicius-mikuni/">Vinicius
+										Mikuni</a></br>LBNL / NERSC</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; margin: 0.4em; border-radius: 50%;"
+									src="images/speaker_nakalembe.jpg" alt="" />
+								<h3><a href="https://geog.umd.edu/facultyprofile/nakalembe/catherine/">Catherine
+										Nakalembe</a></br>University of Maryland</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; margin: 0.2em; border-radius: 50%;"
+									src="images/speaker_kerner.jpg" alt="" />
+								<h3><a href="https://fullcircle.asu.edu/welcome/hannah-kerner/">Hannah
+										Kerner</a></br>Arizona State University</h3>
+							</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_felici.jpg" alt="" />
+								<h3><a href="https://people.epfl.ch/federico.felici">Federico Felici</a></br>EPFL</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_dogus.jpeg" alt="" />
+								<h3><a href="https://research.google/people/EkinDogusCubuk/">E. Doğuş
+										Çubuk</a></br>Google Brain</h3>
+							</li>
+						</ul>
+
+						<!-- <header class="major">
+							<h2>Panelists</h2>
+						</header>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/panel_krenn.png" alt="" />
+								<h3><a href="https://mariokrenn.wordpress.com/">Mario Krenn</a></br>MPI for the Science
+									of Light</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/panel_sullivan.jpg" alt="" />
+								<h3><a href="https://www.eesullivan.com/">Emily Sullivan</a></br>Eindhoven U. of
+									Technology</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/panel_kreel.jpg" alt="" />
+								<h3><a href="https://kathleenacreel.com/">Kathleen
+										Creel</a></br>Northeastern University</h3>
+							</li>
+						</ul> -->
+
+					</div>
+				</div>
+			</section>
+
+			<!-- <section id="papers" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Papers</h2>
+						</header>
+
+						<table style="font-size: 80%">
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><b>A Curriculum-Training-Based Strategy for Distributing Collocation Points
+											during Physics-Informed Neural Network Training</b> [<a
+											href='files/NeurIPS_ML4PS_2023_1.pdf'>paper</a>] [<a
+											href='https://neurips.cc/media/PosterPDFs/NeurIPS%202023/56861.png'>poster</a>]
+										[<a href='https://neurips.cc/virtual/2023/event/56861'>event</a>]<br>Münzer,
+										Marcus*; Bard, Christopher</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<h2>MLST Paper Award</h2>
+				The contribution <b>Ad-hoc Pulse Shape Simulation using Cyclic Positional U-Net</b> [<a
+					href='files/NeurIPS_ML4PS_2023_12.pdf'>paper</a>] [<a
+					href='https://neurips.cc/media/PosterPDFs/NeurIPS%202023/56848.png'>poster</a>] by Aobo Li, Julieta
+				Gruszko, Brady Bos, Thomas Caldwell, Esteban León, and John Wilkerson was selected for the MLST Paper
+				Award. The award is sponsored by <a href='https://iopscience.iop.org/journal/2632-2153'>
+					<emph>Machine Learning: Science and Technology</emph>
+				</a> and acknowledges an outstanding submission to the workshop.</p>
+			</section> -->
+			<section id="cfp" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Call for papers</h2>
+						</header>
+
+						<!-- <h3>Call for reviewers</h3>
+
+									<p>We would appreciate your skills as a reviewer! Please consider applying for that role <a
+											href="https://forms.gle/EELBnk7Z9ua3ygcZ9">here</a>.</p>
+
+									<p><a href="https://forms.gle/EELBnk7Z9ua3ygcZ9" class="button">Sign up to review</a></p> -->
+
+						<p>In this workshop, we aim to bring together physical scientists and machine learning
+							researchers who work at the intersection of these fields – i.e., applying machine learning
+							to problems in the physical sciences (physics, chemistry, mathematics, astronomy, materials
+							science, biophysics, and related sciences) or using physical insights to understand and
+							improve machine learning techniques.</p>
+
+						<p>We invite researchers to submit work particularly in the following areas or areas related to
+							them:</p>
+
+						<ul>
+							<li><strong>ML for Physics:</strong> Applications of machine learning to physical sciences
+								including astronomy, astrophysics, cosmology, biophysics, chemistry, climate science,
+								earth science, materials science, mathematics, particle physics, or any related area;
+							</li>
+							<li><strong>Physics in ML:</strong> Strategies for incorporating prior scientific knowledge
+								into machine learning algorithms, as well as applications of physical sciences to
+								understand, model, and improve machine learning techniques;</li>
+							<li><strong>ML in the scientific process:</strong> Machine learning model interpretability
+								for obtaining insights to physical systems; Automating multiple elements of the
+								scientific method for discovery and operations with experiments;</li>
+							<li>Any other area related to the subject of the workshop, including but not limited to
+								<strong>probabilistic methods</strong> that are relevant to physical systems, such as
+								deep generative models, probabilistic programming, simulation-based inference,
+								variational inference, causal inference, etc.
+							</li>
+						</ul>
+
+						<p>We invite authors to follow the <a
+								href="https://neurips.cc/Conferences/2023/PaperInformation/PaperChecklist">guidelines
+								and best practices</a> from the NeurIPS conference.</p>
+
+						<h3>Contributed Talks</h3>
+						<p>Several accepted submissions will be selected for contributed talks. Contributed talks can be
+							in-person or remote depending on the preference of the presenter.</p>
+
+						<h3>Posters</h3>
+						<p>Accepted work will be presented as posters during the workshop. At the same time as the
+							in-person poster session, we will also facilitate a virtual poster session in GatherTown.
+							Authors of submitted papers will be able to indicate their preference for an in-person
+							presentation or a virtual presentation. Furthermore, in order to facilitate viewing
+							presentations in different time zones, the authors of each accepted paper will get the
+							opportunity to submit a 5 minute video that summarizes their work. </p>
+						<p>In case the number of posters that can be presented in-person is limited by the available
+							physical space, a subset of works will be selected to be presented virtually. We will try to
+							keep the authors preference for in-person/virtual poster presentations in mind during this
+							selection. The remaining posters can be presented during the virtual poster session, and
+							through the 5 minutes videos that will be uploaded to the workshop website.</p>
+
+						<h3>Important note for work that will be/has been published elsewhere</h3>
+						<p>All accepted works will be made available on the workshop website. This does not constitute
+							an archival publication or formal proceedings; authors retain full copyright of their work
+							and are free to publish their extended work in another journal or conference. We allow
+							submission of works that overlap with papers that are under review or have been recently
+							published in a conference or a journal, including physical science journals. However, we do
+							not accept cross-submissions of the same content to multiple workshops at NeurIPS. (Check
+							the <a href="https://blog.neurips.cc/2023/07/17/announcing-the-neurips-2023-workshops/">list
+								of accepted workshops</a> this year.)</p>
+
+						<h3>Submission instructions</h3>
+
+						<p>Submit your work on the <a href="https://cmt3.research.microsoft.com/ML4PS2023">submission
+								portal</a>.</p>
+
+						<p><a href="https://cmt3.research.microsoft.com/ML4PS2023" class="button">Submit paper</a></p>
+
+						<ul>
+							<li>Submissions should be anonymized short papers (extended abstracts) up to 4 pages in PDF
+								format, typeset using the <a
+									href="https://neurips.cc/Conferences/2023/PaperInformation/StyleFiles">NeurIPS paper
+									template</a>. </li>
+							<li>The authors are required to include a short statement (approximately one paragraph)
+								about the potential broader impact of their work, including any ethical aspects and
+								future societal consequences, which may be positive or negative. The broader impact
+								statement should come after the main paper content. The impact statement and references
+								do not count towards the page limit. </li>
+							<li>The NeurIPS style template includes a paper checklist intended to encourage best
+								practices for responsible machine learning research (see <a
+									href="https://neurips.cc/Conferences/2023/PaperInformation/PaperChecklist">associated
+									guidelines</a>). Although we require authors to complete the checklist in order to
+								raise awareness of and encourage these practices we expect, given the scope and format
+								of the workshop, that many of the checklist items will not be applicable to the
+								submitted papers. As such, answering "no" or "n/a" to the checklist items will not
+								reflect adversely on submissions and we do not expect authors to further qualify their
+								answers. </li>
+							<li>Appendices are highly discouraged, and reviewers will not be required to read beyond the
+								first 4 pages and the impact statement. </li>
+							<li>A workshop-specific modified NeurIPS style file will be provided for the camera-ready
+								versions, after the author notification date. </li>
+							<li>Workshop organizers retain the right to reject submissions for editorial reasons: for
+								example, any paper surpassing the page limitation or not including the broader impact
+								statement will be desk-rejected. </li>
+							<li>Submissions will be kept confidential until they are accepted and until authors confirm
+								that they can be included in the workshop. If a submission is not accepted, or withdrawn
+								for any reason, it will be kept confidential and not made public. </li>
+						</ul>
+
+						<h3>Review process</h3>
+
+						<p>Submissions that follow the submission instructions correctly (i.e., are not rejected due to
+							editorial reasons, such as exceeding the page limit, missing the impact statement, etc,) are
+							sent for peer-review. Below are some of the key points about this process that are shared
+							with the reviewers and authors alike. Authors are expected to consider these in preparation
+							of their submissions and when deciding to apply for the reviewer role.</p>
+
+						<ul>
+							<li>Papers are 4 pages long. Appendices are accepted but highly discouraged; the reviewers
+								will not be required to read the appendices. </li>
+							<li>There will be multiple reviewers for each paper.</li>
+							<li>Reviewers will be able to state their confidence in their review.</li>
+							<li>We will provide an easy-to-follow template for reviews so that both the pros and the
+								cons of the submission can be highlighted.</li>
+							<li>Reviewers will select their field of expertise so that each submission has reviewers
+								from multiple fields. During the matching process, the same list of subject fields is
+								used for submissions and reviewer expertise in order to maximize the quality of reviews.
+							</li>
+							<li>Potential conflicts of interest based on institution and author collaboration are
+								addressed through the CMT review system.</li>
+							<li>Criteria for a successful submission include: novelty, correctness, relevance to the
+								field, at the intersection of ML and physical sciences, and showing promise for future
+								impact. Negative or null results that add value and insight are welcome.</li>
+							<li>There will be no rebuttal period. Minor flaws will not be the sole reason to reject a
+								paper. Incomplete works at an advanced progress stage are welcome. </li>
+						</ul>
+
+						<h3>Important dates</h3>
+						<ul>
+							<li>Submission Deadline: <strike>September 22</strike> September 29, 2023, 23:59 <a
+									href="https://www.timeanddate.com/time/zones/aoe">AoE</a></li>
+							<li>Review Deadline: <strike>October 8</strike> October 14, 2023, 23:59 <a
+									href="https://www.timeanddate.com/time/zones/aoe">AoE</a></li>
+							<li>Author (accept/reject) notification: <strike>October 15</strike> October 20, 2023, 23:59
+								<a href="https://www.timeanddate.com/time/zones/aoe">AoE</a>
+							</li>
+							<li>Camera-ready (final) paper deadline: November 19, 2023, 23:59 <a
+									href="https://www.timeanddate.com/time/zones/aoe">AoE</a></li>
+							<li>Poster deadline: November 19, 2023, 23:59 <a
+									href="https://www.timeanddate.com/time/zones/aoe">AoE</a></li>
+							<li>Workshop: December 3, 2023</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="organizers" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Organizers</h2>
+						</header>
+
+						<p>For questions and comments, please contact us at <a
+								href="mailto:ml4ps2023@googlegroups.com">ml4ps2023@googlegroups.com</a>.</p>
+
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/kucukbenli.jpg" alt="" />
+								<h3><a href="https://www.bu.edu/questrom/profile/emine-kucukbenli/">Emine
+										Kucukbenli</a></br>NVIDIA</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/baydin.jpg" alt="" />
+								<h3><a href="http://www.robots.ox.ac.uk/~gunes/">Atılım Güneş Baydin</a></br>University
+									of Oxford</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/dieng.jpg" alt="" />
+								<h3><a href="https://adjidieng.github.io/">Adji Bousso Dieng</a></br>Princeton
+									University</h3>
+							</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/nord.jpg" alt="" />
+								<h3><a href="https://computing.fnal.gov/brian-nord/">Brian Nord</a></br>Fermilab</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/nachman.jpg" alt="" />
+								<h3><a href="https://bids.berkeley.edu/people/benjamin-nachman">Benjamin
+										Nachman</a></br>Lawrence Berkeley National Laboratory</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/siddharth.jpg" alt="" />
+								<h3><a href="https://www.smsharma.io/">Siddharth Mishra-Sharma</a></br>MIT/Harvard/IAIFI
+								</h3>
+							</li>
+						</ul>
+						<header class="major">
+							<h2>Steering Committee</h2>
+						</header>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/cranmer.jpg" alt="" />
+								<h3><a href="http://theoryandpractice.org/">Kyle Cranmer</a></br>University of Wisconsin
+								</h3>
+							</li>
+							<!-- <li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/anandkumar.jpg" alt="" />
+								<h3><a href="http://tensorlab.cms.caltech.edu/users/anima/">Anima
+										Anandkumar</a></br>Caltech / NVIDIA</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_zdeborova.jpg"
+									alt="" />
+								<h3><a href="https://www.epfl.ch/labs/spoc/prof-lenka-zdeborova/">Lenka
+										Zdeborová</a></br>EPFL</h3>
+							</li> -->
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/louppe.jpg" alt="" />
+								<h3><a href="https://glouppe.github.io/">Gilles Louppe</a></br>University of Liège</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/thais.jpg" alt="" />
+								<h3><a href="https://www.linkedin.com/in/savannah-thais-12a7b95a/">Savannah
+										Thais</a></br>Columbia University</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="sponsors" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Sponsors</h2>
+						</header>
+						<!-- <ul class="features">
+							<li style="margin: 0em 8em 2em 1em;">
+								<h3><a style="text-decoration: none;color: #FFFFFF;" href="https://iaifi.org/"><img
+											style="width:135%;margin:0.5em 0em 0.5em 0em"
+											src="images/iaifi-fullname-logo-black.png" alt="IAIFI" /></a></h3>
+							</li>
+							<li style="margin: 0em 8em 2em 0em;">
+								<h3><a style="text-decoration: none;color: #FFFFFF;"
+										href="https://iopscience.iop.org/journal/2632-2153"><img
+											style="width:120%;margin:0.5em 0em 0.5em 0em" src="images/mlst.jpg"
+											alt="MLST" /></a></h3>
+							</li>
+							<li style="  display: block;margin-left: auto;margin-right: auto;width: 75%">
+								<a style="text-decoration: none;color: #FFFFFF;"
+									href="https://engage.aps.org/gds/home"><img
+										style="height:10em;margin:0.5em 0em 0.5em 0em" src="images/aps_gds_logo.png"
+										alt="APS GDS" /></a>
+							</li>
+						</ul> -->
+						<p>Sponsors are welcome. Please contact <a href="mailto:ml4ps2023@googlegroups.com">us</a>.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="location" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Location</h2>
+						</header>
+						<p>NeurIPS 2023 will be a hybrid conference with physical and virtual participation. The
+							physical component will take place at the
+							<a href="https://mccno.com/">New Orleans Ernest N. Morial Convention Center</a>, 900
+							Convention Center Blvd, New Orleans, LA 70130, United States
+						</p>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27657.447675480584!2d-90.07160791540527!3d29.94547311541842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x185d4d6c82fa192f!2sNew%20Orleans%20Ernest%20N.%20Morial%20Convention%20Center!5e0!3m2!1sen!2sus!4v1666014137915!5m2!1sen!2sus"
+							width="100%" height="300em" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Contact</h2>
+				<p>For questions and comments, please contact: <a
+						href="mailto:ml4ps2023@googlegroups.com">ml4ps2023@googlegroups.com</a></p>
+			</section>
+			<!-- <p class="copyright">Background image: <a href="https://www.spacetelescope.org/images/potw1712a/">NGC 3447 from Hubble WFC3</a></p> -->
+			<p class="copyright">Copyright &copy; Atılım Güneş Baydin. Design: <a href="https://html5up.net">HTML5
+					UP</a>.</br>Design inspired by <a
+					href="http://bayesiandeeplearning.org/">http://bayesiandeeplearning.org/</a> by Yarin Gal.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts  -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<!-- Default Statcounter code for
+			ml4physicalsciences.github.io
+			https://ml4physicalsciences.github.io/ -->
+	<script type="text/javascript">
+		var sc_project = 12052169;
+		var sc_invisible = 1;
+		var sc_security = "0155c36a";
+		var sc_https = 1;
+	</script>
+	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+	<noscript>
+		<div class="statcounter"><a title="free hit
+			counter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+					src="https://c.statcounter.com/12052169/0/0155c36a/1/" alt="free hit counter"></a></div>
+	</noscript>
+	<!-- End of Statcounter Code -->
+	<script src="assets/js/lightbox.js"></script>
+</body>
+
+</html>
