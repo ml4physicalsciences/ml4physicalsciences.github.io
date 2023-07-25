@@ -1,16 +1,17 @@
 let points = [];
-let numPoints = 1000;
+let numPoints = 750;
 
 function setup() {
-    let canvas = createCanvas(windowWidth, windowHeight, WEBGL);
+    let sketchHolder = document.getElementById('sketch-holder');
+    let canvas = createCanvas(sketchHolder.offsetWidth, sketchHolder.offsetHeight, WEBGL);
     canvas.parent('sketch-holder');
 
     // Create points on a sphere using the Golden Spiral
     let indices = [...Array(numPoints).keys()];
     let inc = PI * (3 - sqrt(5)); // Golden angle
     for (let i of indices) {
-        let y = 200 * (1 - (i / (numPoints - 1)) * 2); // y goes from -200 to 200
-        let radius = sqrt(200 * 200 - y * y); // Radius at y
+        let y = 300 * (1 - (i / (numPoints - 1)) * 2); // y goes from -200 to 200
+        let radius = sqrt(300 * 300 - y * y); // Radius at y
 
         let phi = i * inc;
 
@@ -24,7 +25,7 @@ function setup() {
 function draw() {
     background(0);
 
-    translate(0, 0, 0);
+    translate(0, -25, 0);
     rotateX(frameCount * 0.01);
     rotateY(frameCount * 0.01);
 
@@ -36,7 +37,7 @@ function draw() {
 
     // Display points
     stroke(255, 128);  // Added alpha value
-    strokeWeight(2);
+    strokeWeight(2.5);
     noFill();
     for (let i = 0; i < points.length; i++) {
         // Morph the sphere into a box-like shape
@@ -48,5 +49,6 @@ function draw() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    let sketchHolder = document.getElementById('sketch-holder');
+    resizeCanvas(sketchHolder.offsetWidth, sketchHolder.offsetHeight);
 }
