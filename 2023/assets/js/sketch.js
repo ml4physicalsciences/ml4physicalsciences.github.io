@@ -37,7 +37,7 @@ function draw() {
     blendMode(ADD);
 
     // Display points
-    stroke(255, 175);  // Added alpha value
+    stroke(255, 150);  // Added alpha value
     strokeWeight(2.5);
     noFill();
     for (let i = 0; i < points.length; i++) {
