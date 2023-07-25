@@ -40,10 +40,15 @@ function draw() {
     strokeWeight(2.5);
     noFill();
     for (let i = 0; i < points.length; i++) {
-        // Morph the sphere into a box-like shape
-        let x = constrain(points[i].x + random(-displacement, displacement), -width / 2, width / 2);
-        let y = constrain(points[i].y + random(-displacement, displacement), -height / 2, height / 2);
-        let z = constrain(points[i].z + random(-displacement, displacement), -width / 2, width / 2);
+        // // Morph the sphere into a box-like shape
+        // let x = constrain(points[i].x + random(-displacement, displacement), -width / 2, width / 2);
+        // let y = constrain(points[i].y + random(-displacement, displacement), -height / 2, height / 2);
+        // let z = constrain(points[i].z + random(-displacement, displacement), -width / 2, width / 2);
+        // Morph without constraint
+        let x = points[i].x + random(-displacement, displacement);
+        let y = points[i].y + random(-displacement, displacement);
+        let z = points[i].z + random(-displacement, displacement);
+
         point(x, y, z);
     }
 }
