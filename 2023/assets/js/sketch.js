@@ -1,44 +1,43 @@
 let points = [];
 let numPoints = 600;
 
-function setup() {
+async function setup() {
     let sketchHolder = document.getElementById('sketch-holder');
 
     let canvas = createCanvas(sketchHolder.offsetWidth, sketchHolder.offsetHeight, WEBGL);
     canvas.parent('sketch-holder');
 
-    // Create points on a sphere using the Golden Spiral
-    let indices = [...Array(numPoints).keys()];
-    let inc = PI * (3 - sqrt(5)); // Golden angle
-    for (let i of indices) {
-        let y = 300 * (1 - (i / (numPoints - 1)) * 2); // y goes from -200 to 200
-        let radius = sqrt(300 * 300 - y * y); // Radius at y
+    // Fetch the coordinates from the server
+    let response = await fetch('assets/js/galaxy_coordinates.txt');
+    let text = await response.text();
+    let lines = text.split('\n');
 
-        let phi = i * inc;
+    // Scale factor for the coordinates
+    let scale = 300;
 
-        let x = cos(phi) * radius;
-        let z = sin(phi) * radius;
-
-        points[i] = createVector(x, y, z);
+    // Parse each line and create a vector for each galaxy
+    for (let i = 0; i < lines.length; i++) {
+        let [x, y, z] = lines[i].split(' ').map(Number);
+        points[i] = createVector(x * scale, y * scale, z * scale);
     }
+    // rest of your setup code...
 }
-
 function draw() {
-    background(0);
-
+    // background(0);
+    clear();
     translate(0, -25, 0);
     rotateX(frameCount * 0.0005);
     rotateY(frameCount * 0.0005);
 
     // Calculate displacement based on scroll position
     let scrollPos = window.scrollY / windowHeight;
-    let displacement = map(scrollPos, 0, 2, 0, 20);
+    let displacement = map(scrollPos, 0, 2, 0, 50);
 
     blendMode(ADD);
 
     // Display points
     stroke(255, 128);  // Added alpha value
-    strokeWeight(2.2);
+    strokeWeight(3.0);
     noFill();
     for (let i = 0; i < points.length; i++) {
         // // Morph the sphere into a box-like shape
