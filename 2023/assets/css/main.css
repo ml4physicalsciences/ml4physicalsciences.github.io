@@ -1811,7 +1811,8 @@ body {
 } */
 
 body {
-	/* background-image: url("images/cyber.png"); */
+	/* background-image: url("images/main_image_deep_field_smacs0723-5mb.jpg"); */
+	background-image: url("images/52700106115_64cbccfbcd_k.jpg");
 	background-size: 100% auto;
 	background-repeat: repeat-y;
 	background-color: #000;
@@ -1821,9 +1822,10 @@ body {
 #sketch-holder {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	left: 50%;
+	width: 1083px;
+	height: 508px;
+	transform: translateX(-50%);
 	z-index: -1;
 }
 
@@ -3352,9 +3354,9 @@ table.alt tbody tr td {
 	display: inline-block;
 }
 
-.dropdown>a {
+/* .dropdown>a {
 	color: rgb(155, 6, 6);
-}
+} */
 
 .dropdown-content {
 	display: none;
@@ -3536,13 +3538,13 @@ table.alt tbody tr td {
 	color: #636363;
 }
 
-#nav a:link {
+/* #nav a:link {
 	color: rgb(155, 6, 6);
 }
 
 a:link {
 	color: rgb(155, 6, 6);
-}
+} */
 
 a:hover {
 	color: #636363;

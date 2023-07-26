@@ -27,18 +27,18 @@ function draw() {
     background(0);
 
     translate(0, -25, 0);
-    rotateX(frameCount * 0.01);
-    rotateY(frameCount * 0.01);
+    rotateX(frameCount * 0.0005);
+    rotateY(frameCount * 0.0005);
 
     // Calculate displacement based on scroll position
     let scrollPos = window.scrollY / windowHeight;
-    let displacement = map(scrollPos, 0, 2, 0, 200);
+    let displacement = map(scrollPos, 0, 2, 0, 20);
 
     blendMode(ADD);
 
     // Display points
-    stroke(255, 150);  // Added alpha value
-    strokeWeight(2.5);
+    stroke(255, 128);  // Added alpha value
+    strokeWeight(2.2);
     noFill();
     for (let i = 0; i < points.length; i++) {
         // // Morph the sphere into a box-like shape
