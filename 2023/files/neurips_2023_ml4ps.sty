@@ -16,13 +16,13 @@
 % nips15submit_e.sty, including MK and drstrip@sandia
 %
 % Modified for the NeurIPS Machine Learning and the Physical Sciences workshop
-% by Atilim Gunes Baydin (gunes@robots.ox.ac.uk), October 2022
+% by Siddharth Mishra-Sharma (smsharma@mit.edu), October 2023
 % https://ml4physicalsciences.github.io
 %
-% last revision: 28 Oct 2022
+% last revision: 31 Oct 2023
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{neurips_2022_ml4ps}[2022/03/31 NeurIPS 2022 submission/camera-ready style file]
+\ProvidesPackage{neurips_2023_ml4ps}[2023/03/31 NeurIPS 2023 submission/camera-ready style file]
 
 % declare final option, which creates camera-ready copy
 \newif\if@neuripsfinal\@neuripsfinalfalse
@@ -57,8 +57,8 @@
 \renewcommand{\sfdefault}{phv}
 
 % change this every year for notice string at bottom
-\newcommand{\@neuripsordinal}{36th}
-\newcommand{\@neuripsyear}{2022}
+\newcommand{\@neuripsordinal}{37th}
+\newcommand{\@neuripsyear}{2023}
 \newcommand{\@neuripslocation}{New Orleans}
 
 % acknowledgments
@@ -87,7 +87,7 @@
     footskip=30pt
   }
   \@ifpackageloaded{fullpage}
-    {\PackageWarning{neurips_2022_ml4ps}{fullpage package not allowed! Overwriting formatting.}}
+    {\PackageWarning{neurips_2023}{fullpage package not allowed! Overwriting formatting.}}
     {}
 }
 
@@ -321,12 +321,6 @@
   \vskip 1ex%
 }
 
-% For the paper checklist
-\newcommand{\answerYes}[1][]{\textcolor{blue}{[Yes] #1}}
-\newcommand{\answerNo}[1][]{\textcolor{orange}{[No] #1}}
-\newcommand{\answerNA}[1][]{\textcolor{gray}{[N/A] #1}}
-\newcommand{\answerTODO}[1][]{\textcolor{red}{\bf [TODO]}}
-
 % handle tweaks for camera-ready copy vs. submission copy
 \if@preprint
   \newcommand{\@noticestring}{%
@@ -335,12 +329,12 @@
 \else
   \if@neuripsfinal
     \newcommand{\@noticestring}{%
-    Machine Learning and the Physical Sciences workshop, NeurIPS \@neuripsyear.
+    Machine Learning and the Physical Sciences Workshop, NeurIPS \@neuripsyear.
     % \@neuripslocation.%
     }
   \else
     \newcommand{\@noticestring}{%
-    Submitted to Machine Learning and the Physical Sciences workshop, NeurIPS \@neuripsyear.
+    Submitted to Machine Learning and the Physical Sciences Workshop, NeurIPS \@neuripsyear.
     Do not distribute.%
     }
 
