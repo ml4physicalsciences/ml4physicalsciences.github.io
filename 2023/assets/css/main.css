@@ -4107,3 +4107,50 @@ a:hover {
 	}
 
 }
+
+#sponsors .features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#sponsors .features li {
+	flex-basis: 30%;
+	/* Adjust based on how many logos per row */
+	text-align: center;
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sponsors .features img {
+	max-width: 100%;
+	max-height: 200px;
+	height: auto;
+	width: auto;
+}
+
+@media screen and (max-width: 768px) {
+	#sponsors .features li {
+		flex-basis: 50%;
+		/* 2 logos per row on smaller screens */
+	}
+}
+
+#sponsors .features a {
+	text-decoration: none;
+	/* Removes the underline or dotted line */
+	border: none;
+	/* Removes any border that might be applied */
+}
+
+#sponsors .features a:hover,
+#sponsors .features a:focus,
+#sponsors .features a:active {
+	text-decoration: none;
+	/* Ensures the underline doesn't appear on hover, focus, or active states */
+}
