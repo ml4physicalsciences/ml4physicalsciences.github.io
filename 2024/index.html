@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48900508-9"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-48900508-9');
+	</script>
+
+	<title>Machine Learning and the Physical Sciences, NeurIPS 2024</title>
+	<meta name="description"
+		content="Website for the Machine Learning and the Physical Sciences (MLPS) workshop at the 38th Conference on Neural Information Processing Systems (NeurIPS)">
+	<meta name="author" content="Atilim Gunes Baydin">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<link rel="stylesheet" href="assets/css/lightbox.css" />
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/cmu-sans-serif" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+
+<body>
+
+	<div id="sketch-holder"></div>
+	<script src="assets/js/sketch.js"></script>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+			<img style="width:5em;" src="images/NeurIPS-logo-white.svg" alt="" />
+			<h1>Machine Learning and the Physical Sciences</h1>
+			<p>Workshop at the 38th conference on Neural Information Processing Systems (NeurIPS)<br>
+				December 14 or 15, 2024</p>
+		</header>
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<!-- <li><a href="#schedule">Schedule</a></li> -->
+				<!-- <li><a href="#speakers">Speakers</a></li> -->
+				<!-- <li><a href="#papers">Papers</a></li> -->
+				<li><a href="#cfp">Call for papers</a></li>
+				<li><a href="#organizers">Organizers</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+				<li>
+					<div class="dropdown">
+						<a>All Years</a>
+						<div class="dropdown-content">
+							<a href="https://ml4physicalsciences.github.io/2024">2024</a>
+							<a href="https://ml4physicalsciences.github.io/2023">2023</a>
+							<a href="https://ml4physicalsciences.github.io/2022">2022</a>
+							<a href="https://ml4physicalsciences.github.io/2021">2021</a>
+							<a href="https://ml4physicalsciences.github.io/2020">2020</a>
+							<a href="https://ml4physicalsciences.github.io/2019">2019</a>
+							<a href="https://ml4physicalsciences.github.io/2017">2017</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<section id="about" class="main">
+				<div class="spotlight">
+					<div class="content">
+
+						<header class="major">
+							<h2>About</h2>
+						</header>
+
+						<p>
+							The <strong>Machine Learning and the Physical Sciences</strong> workshop aims to provide an informal, inclusive, and leading-edge venue for discussing research and challenges at the intersection of machine learning (ML) and the physical sciences (PS). This includes the applications of ML to problems in the physical sciences (ML for PS) as well as developments in ML motivated by physical insights (PS for ML). 
+							PS is defined inclusively, including but not limited to physics, astronomy, cosmology, chemistry, biophysics, materials science, and Earth science. 
+						</p>
+
+						<p>Recent years have highlighted unique opportunities as well as challenges in incorporating ML workflows as part of the scientific process in many physical sciences. For example, fields focused on fundamental physics discovery, such as particle physics and cosmology, often have stringent requirements for exactness, robustness, and latency that go beyond those typically encountered in other scientific domains and industry applications. Data preservation and workflow reproducibility are other central challenges that need to be addressed in the era of large experiments, collaborations, and datasets. In these fields and others, simulations play a central role in connecting theoretical models to observations. The ubiquity and increasing complexity of simulators in PS has spurred methodological advances in ML, e.g. in simulation-based inference and differentiable programming, that are finding applications far beyond PS, showcasing the bidirectional nature of the PS-ML intersection.</p>
+
+						<p>The breadth of work at the intersection of ML and physical sciences is answering many
+							important questions for both fields while opening up new ones that can only be addressed by
+							a joint effort of both communities. By bringing together ML researchers and physical
+							scientists who apply and study ML, we expect to strengthen the much needed interdisciplinary
+							dialogue, introduce exciting new open problems to the broader community, and stimulate the
+							production of new approaches to solving challenging open problems in the sciences. Invited
+							talks from leading individuals in both communities will cover the state-of-the-art
+							techniques and set the stage for this workshop, which will also include contributed talks
+							selected from submissions.</p>
+
+							<p>The invited talks program will showcase unique features of the physical sciences that highlight current challenges and bidirectional opportunities in ML and PS. This includes the central role of simulators in the scientific process, the need for rigorous uncertainty quantification, and the development of hardware-software co-design solutions for real-time inference. </p>
+
+						<p>A part of the workshop program will be dedicated to the <strong>focus area</strong> discussing
+						   the role of data-driven vs inductive bias-driven methods in machine learning and the physical sciences, centering the emerging role of foundation models and their complementarity with approaches leveraging physical inductive biases. This will feature an overview talk, followed by a moderated panel discussion.
+						</p>
+
+						<h2>NeurIPS 2024</h2>
+						<p><span class="image left"><img style="width:6em;padding-left:0.5em;padding-top:.7em;"
+									src="images/NeurIPS-logo.svg" alt="" /></span>The Machine Learning and the Physical
+							Sciences 2024 workshop will be held on December 14 or 15, 2024 at the Vancouver Convention Center
+							in Vancouver, BC, Canada as a part of the <a href="https://neurips.cc/">38th annual conference on
+								Neural Information Processing Systems</a> (NeurIPS). The workshop is planned to take
+							place in a hybrid format inclusive of virtual participation.
+					</div>
+				</div>
+			</section>
+			<section id="speakers" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Speakers</h2>
+						</header>
+						<!-- <p>Plenary speakers and focus area panelists.</p> -->
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/thea.jpeg" alt="" />
+								<h3><a href="https://thaarres.github.io/">Thea Aarrestad</a></br>ETH Zurich</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/yasaman.jpeg"
+									alt="" />
+								<h3><a href="https://sites.google.com/view/yasamanbahri/home/">Yasaman Bahri</a></br>Google DeepMind
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/annlee.jpeg" alt="" />
+								<h3><a href="https://www.stat.cmu.edu/~annlee/">Ann Lee</a></br>Carnegie Mellon University</h3>
+							</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/laurence.avif"
+									alt="" />
+								<h3><a href="https://ciela.science/team/laurence-perreault-levasseur/">Laurence Perreault-Levasseur
+								</a></br>Université de Montréal / Mila</h3>
+							</li>
+
+						</ul>
+
+						<header class="major">
+							<h2>Panelists</h2>
+						</header>
+						<p>Topic: Data-driven vs inductive bias-driven methods in machine learning and the physical sciences.</p>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/anandkumar.jpg" alt="" />
+								<h3><a href="http://tensorlab.cms.caltech.edu/users/anima/">Anima Anandkumar</a></br>Caltech
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/johannes.jpg" alt="" />
+								<h3><a href="https://brandstetter-johannes.github.io/">Jesse
+										Thaler</a></br>JKU Linz / NXAI</h3>
+							</li>
+
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/naoya.jpg" alt="" />
+								<h3><a href="https://ntake.jp/">Naoya Takeishi</a></br>University of Tokyo / RIKEN</h3>
+							</li>
+							<!-- <li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/speaker_wu.jpg" alt="" />
+								<h3> <a href="https://jwuphysics.github.io/">John Wu</a><span
+										style="font-style: italic; font-size: smaller;"> (Moderator)</span></br>Space
+									Telescope Science Institute
+								</h3>
+							</li> -->
+						</ul>
+
+					</div>
+				</div>
+			</section>
+			<section id="cfp" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Call for papers</h2>
+						</header>
+
+						<p><span
+							style="font-style: italic;"> Coming soon! </span></p>
+
+							<h3>Important dates</h3>
+							<ul>
+								<li>Submission Deadline: August 30, 2024, 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">AoE</a></li>
+								<!-- <li>Review Deadline: September 20, 2024, 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">AoE</a> (Tentative)</li> -->
+								<li>Author (accept/reject) notification: September 30, 2024, 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">AoE</a></li>
+								<!-- <li>Camera-ready (final) paper deadline: November 14, 2024, 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">AoE</a> (Tentative)</li> -->
+								<!-- <li>Poster deadline: November 14, 2024, 23:59 <a href="https://www.timeanddate.com/time/zones/aoe">AoE</a> (Tentative)</li> -->
+								<li>Workshop: December 14 or 15, 2024</li>
+							</ul>
+												</div>
+				</div>
+			</section>
+
+			<section id="organizers" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Organizers</h2>
+						</header>
+
+						<p>For questions and comments, please contact us at <a
+								href="mailto:ml4ps@googlegroups.com">ml4ps@googlegroups.com</a>.</p>
+
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/nicole.png" alt="" />
+								<h3><a href="https://www.linkedin.com/in/nicole-hartman-16564b139/">Nicole Hartman</a></br>Technical University of Munich
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/mariel.jpg" alt="" />
+								<h3><a href="https://marielpettee.com/">Mariel Pettee</a></br>LBNL / Flatiron Institute
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/vinny.png" alt="" />
+								<h3><a href="https://www.nersc.gov/about/nersc-staff/nesap-postdocs/vinicius-mikuni/">Vinicius Mikuni</a></br>LBNL / NERSC
+								</h3>
+							</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/siddharth2.jpeg" alt="" />
+								<h3><a href="https://www.smsharma.io/">Siddharth Mishra-Sharma</a></br>MIT / IAIFI / Boston University
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/sebastian.png" alt="" />
+								<h3><a href="https://www.simonsfoundation.org/people/sebastian-wagner-carena/">Sebastian Wagner-Carena</a></br>NYU / Simons Foundation
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/antoine.jpeg" alt="" />
+								<h3><a href="https://awehenkel.github.io/">Antoine Wehenkel</a></br>Apple
+								</h3>
+							</li>
+						</ul>
+						<header class="major">
+							<h2>Steering Committee</h2>
+						</header>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/baydin.jpg" alt="" />
+								<h3><a href="http://www.robots.ox.ac.uk/~gunes/">Atılım Güneş Baydin</a></br>University
+									of Oxford</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/cranmer.jpg" alt="" />
+								<h3><a href="http://theoryandpractice.org/">Kyle Cranmer</a></br>University of Wisconsin
+								</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/nord.jpg" alt="" />
+								<h3><a href="https://computing.fnal.gov/brian-nord/">Brian Nord</a></br>Fermilab</h3>
+							</li>
+						</ul>
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/nachman.jpg" alt="" />
+								<h3><a href="https://bids.berkeley.edu/people/benjamin-nachman">Benjamin
+										Nachman</a></br>LBNL</h3>
+							</li>
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/thais.jpg" alt="" />
+								<h3><a href="https://www.linkedin.com/in/savannah-thais-12a7b95a/">Savannah
+										Thais</a></br>Columbia University</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id="sponsors" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Sponsors</h2>
+						</header>
+						<!-- <ul class="features">
+							<li>
+								<a href="https://iaifi.org/">
+									<img src="images/iaifi-fullname-logo-black.png" alt="IAIFI" />
+								</a>
+							</li>
+							<li>
+								<a href="https://bids.berkeley.edu/">
+									<img src="images/bids_logo.png" alt="BIDS" />
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://pubs.aip.org/aip/aml?utm_source=Machine+Learning+and+the+Physical+Sciences+workshop+Landing+Page&utm_medium=logo&utm_campaign=AML+Machine+Learning+and+the+Physical+Sciences+workshop+Sponsorship+2023&utm_id=Machine+Learning+and+the+Physical+Sciences+workshop+Sponsorship+2023&utm_content=Landing+Page">
+									<img src="images/aml-rgb.png" alt="APL" />
+								</a>
+							</li>
+							<li>
+								<a href="https://engage.aps.org/gds/home">
+									<img src="images/aps_gds_logo.png" alt="APS GDS" />
+								</a>
+							</li>
+							<li>
+								<a href="https://datascience.wisc.edu/institute/">
+									<img src="images/wisconsin.png" alt="Wisconsin Data Science" />
+								</a>
+							</li>
+							<li>
+								<a href="https://iopscience.iop.org/journal/2632-2153/">
+									<img src="images/mlst.jpg" alt="MLST" />
+								</a>
+							</li>
+						</ul> -->
+						<p>Sponsors are welcome. Please contact <a href="mailto:ml4ps@googlegroups.com">us</a>.</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="location" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>Location</h2>
+						</header>
+						<p>NeurIPS 2024 will take place at the
+							<a href="https://www.vancouverconventioncentre.com/">Vancouver Convention Center</a>, 1055 Canada Pl, Vancouver, BC V6C 0C3, Canada.
+						</p>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.313029974694!2d-123.11933692351066!3d49.28941307139378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671836a6e5787%3A0xd3c5f7bc5d72768d!2sVancouver%20Convention%20Centre!5e0!3m2!1sen!2sus!4v1720989032106!5m2!1sen!2sus"
+							width="100%" height="300em" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Contact</h2>
+				<p>For questions and comments, please contact: <a
+						href="mailto:ml4ps@googlegroups.com">ml4ps@googlegroups.com</a></p>
+			</section>
+			<p class="copyright">Background image: <a
+					href="https://webbtelescope.org/contents/media/images/2023/107/01GQQF4KP3GNVB12G6R0V8KSGM?">Pandora's
+					Cluster from JWST NIRCam</a></p>
+			<!-- <p class="copyright">Banner animation: The 1000 nearest galaxies from the <a
+					href="https://irsa.ipac.caltech.edu/applications/2MASS/LGA/intro.html?">2MASS survey</a></p> -->
+			<p class="copyright">Copyright &copy; Atılım Güneş Baydin. Design: <a href="https://html5up.net">HTML5
+					UP</a>.</br>Design inspired by <a
+					href="http://bayesiandeeplearning.org/">http://bayesiandeeplearning.org/</a> by Yarin Gal.</p>
+		</footer>
+
+	</div>
+
+	<!-- Scripts  -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+	<!-- Default Statcounter code for
+			ml4physicalsciences.github.io
+			https://ml4physicalsciences.github.io/ -->
+	<script type="text/javascript">
+		var sc_project = 12052169;
+		var sc_invisible = 1;
+		var sc_security = "0155c36a";
+		var sc_https = 1;
+	</script>
+	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+	<noscript>
+		<div class="statcounter"><a title="free hit
+			counter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+					src="https://c.statcounter.com/12052169/0/0155c36a/1/" alt="free hit counter"></a></div>
+	</noscript>
+	<!-- End of Statcounter Code -->
+	<script src="assets/js/lightbox.js"></script>
+</body>
+
+</html>
