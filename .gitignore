@@ -1,0 +1,8 @@
+
+# ML4PS 2025 - Sensitive files with credentials
+2025/assets/*.py
+2025/ml4ps/*.py
+2025/ml4ps/*.csv
+2025/ml4ps/*README.md
+2025/papers_section_fixed.html
+2025/ml4ps/papers_section.html
