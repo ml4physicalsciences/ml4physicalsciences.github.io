@@ -3393,7 +3393,7 @@ table.alt tbody tr td {
 }
 
 #header.alt {
-	padding: 7em 5em 4em 5em;
+	padding: 7em 5em 1.5em 5em;
 }
 
 #header.alt h1 {
@@ -3442,7 +3442,7 @@ table.alt tbody tr td {
 	}
 
 	#header.alt {
-		padding: 6em 4em 3em 4em;
+		padding: 6em 4em 1.5em 4em;
 	}
 
 }
@@ -3454,7 +3454,7 @@ table.alt tbody tr td {
 	}
 
 	#header.alt {
-		padding: 5em 3em 2em 3em;
+		padding: 5em 3em 1em 3em;
 	}
 
 }
