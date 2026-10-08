@@ -214,7 +214,7 @@
 						</header>
 
 						<header class="major">
-							<span style="font-size: 23px;"><b>Invited Talk</b></span><br>
+							<span style="font-size: 23px;"><b>Invited Plenary Talk</b></span><br>
 
 						<ul class="features">
 							<li>
@@ -247,15 +247,14 @@
 								<h3><a href="https://lingxiao-mlphys.github.io">Lingxiao Wang</a></br><span class="affiliation">RIKEN/University of Tokyo</span>
 								</h3>
 							</li>
-							<br>
+						</ul>
 
+						<ul class="features">
 							<li>
 								<img style="width:9.1em; border-radius: 50%;" src="images/greenspan.jpeg" alt="" />
 								<h3><b>Moderator:</b> <a href="https://www.linkedin.com/in/lbgspan">Lauren Greenspan</a></br><span class="affiliation">PrincInt, PIBBSS</span>
 								</h3>
 							</li>
-							<br>							
-
 						</ul>
 
 						<header class="major">
@@ -265,7 +264,7 @@
 
 				<!-- 		<ul class="features"
 							style="display: flex; justify-content: center; gap: 2rem; list-style: none;"> -->
-						<ul class="features">
+						<ul class="features four-across">
 
 							<li>
 								<img style="width:9.1em; border-radius: 50%;" src="images/sarahdemers.jpg" alt="" />
@@ -284,13 +283,27 @@
 								<h3><a href="https://www.katikish.com">Kati Kish Bar-On</a></br><span class="affiliation">Boston University</span>
 								</h3>
 							</li>
-<!-- 
+
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/siddharth2.jpeg" alt="" />
+								<h3 style="font-size: 1.18em;"><a href="https://www.smsharma.io/">Siddharth Mishra-Sharma</a></br><span class="affiliation">Anthropic / Boston University</span>
+								</h3>
+							</li>
+<!--
 							<li>
 								<img style="width:9.1em; border-radius: 50%;" src="images/daniel_whiteson.png" alt="" />
 								<h3><a href="http://">Daniel Whiteson</a></br><span class="affiliation">UC Irvine</span>
 								</h3>
 							</li> -->
 
+						</ul>
+
+						<ul class="features">
+							<li>
+								<img style="width:9.1em; border-radius: 50%;" src="images/cranmer.jpg" alt="" />
+								<h3><b>Moderator:</b> <a href="http://theoryandpractice.org/">Kyle Cranmer</a></br><span class="affiliation">University of Wisconsin-Madison</span>
+								</h3>
+							</li>
 						</ul>
 
 					</div>
@@ -713,6 +726,21 @@
 		.features li img {
 			max-width: 100%;
 			height: auto;
+		}
+
+		.features.four-across {
+			align-items: flex-start;
+		}
+
+		.features.four-across li {
+			flex-basis: 25%;
+			margin: 10px 0;
+		}
+
+		@media screen and (max-width: 980px) {
+			.features.four-across li {
+				flex-basis: 45%;
+			}
 		}
 
 		.vertical-layout {
